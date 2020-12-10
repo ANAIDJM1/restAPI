@@ -61,7 +61,7 @@ $name = $app->getName();
                 break;
             }
 
-            if($year<2019 || $year >2020 )
+            if($year<2020 || $year >2021 )
             {
                 echo "The Year is out of range! , try with 2019 and 2020";
             }
@@ -73,9 +73,7 @@ $name = $app->getName();
                 }
                 else
                 {
-                    //$url = 'https://disponibilidad.net.pe/cal/'.$id.'/'.$id0.'/data?'.$month.'=10&year='.$year.'&h=undefined';
-
-                    $url = 'https://disponibilidad.net.pe/cal/'.$id.'/'.$id0.'/data?month='.$month.'&year='.$year.'&h=undefined';
+                     $url = 'https://url_envia_data_tipoJSON.net.pe/cal/'.$id.'/'.$id0.'/data?month='.$month.'&year='.$year.'&h=undefined';
 
                     $json = file_get_contents($url);
                     echo $json;
